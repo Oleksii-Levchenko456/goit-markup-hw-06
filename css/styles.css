@@ -90,7 +90,6 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-
   text-decoration: none;
 }
 .logo-studio {
@@ -607,12 +606,155 @@ p {
   }
   .list-our-portfolio {
     display: flex;
-    /* row-gap: 48px;
-    column-gap: 24px; */
     gap: 24px;
   }
   .overlay {
     position: relative;
     overflow: hidden;
+  }
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 96px 0;
+  background-color: #2e2f42;
+}
+.logo-studio-footer {
+  color: #f4f4fd;
+}
+.logo-web-footer {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+.logo-and-text {
+  text-align: center;
+}
+.div-soc-media {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.footer-paragraf {
+  text-align: left;
+  line-height: 1.5;
+  color: #f4f4fd;
+  letter-spacing: 0.02em;
+  width: 264px;
+}
+.header-social-media {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  text-align: center;
+}
+.footer-icons-messenger-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.input-email {
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  height: 40px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  color: #ffffff;
+  padding-left: 16px;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.footer-button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 165px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background: #4d5ae5;
+  color: #fff;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.footer-svg {
+  margin-left: 16px;
+  fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo-and-text {
+    margin-right: 24px;
+    margin-left: 108px;
+  }
+  .div-subscribe {
+    padding-top: 72px;
+  }
+  .div-soc-media {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .input-email {
+    width: 264px;
+    margin-left: 108px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-div {
+    flex-wrap: nowrap;
+  }
+  .footer {
+    padding: 96px 0;
+  }
+  .logo-and-text {
+    margin-left: 0;
+    text-align: left;
+  }
+  .div-subscribe {
+    padding-top: 72px;
+    margin: 0;
+    padding: 0;
+    margin-left: 80px;
+  }
+  .input-email {
+    width: 264px;
+    margin-left: 0;
+  }
+  .header-social-media {
+    text-align: left;
+  }
+  .div-soc-media {
+    margin-left: 120px;
+  }
+  .container {
+    margin: 0;
   }
 }
