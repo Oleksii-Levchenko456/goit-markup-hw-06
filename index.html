@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -49,7 +49,7 @@
           </ul>
         </nav>
         <!-- navigation-info -->
-        <address class="address">
+        <address class="contacts">
           <ul class="contacts-list">
             <li>
               <a class="info-item" href="mailto:info@devstudio.com"
@@ -63,13 +63,80 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="icon-close-on-button" height="8" width="8">
+              <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="text-header">Studio</li>
+              <li class="text-header">Portfolio</li>
+              <li class="text-header">Contacts</li>
+            </ul>
+          </nav>
+          <address>
+            <ul>
+              <li>
+                <a class="info-item" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="info-item" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="div-list-menu">
+            <ul class="soc-link-list">
+              <li class="list-item-icon">
+                <a href="./index.html" class="link-icon">
+                  <svg class="icon-messenger" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item-icon">
+                <a href="./index.html" class="link-icon">
+                  <svg class="icon-messenger" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item-icon">
+                <a href="./index.html" class="link-icon">
+                  <svg class="icon-messenger" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-item-icon">
+                <a href="./index.html" class="link-icon">
+                  <svg class="icon-messenger" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <!-- SECTION ONE -->
       <section class="section-one">
         <div class="container">
-          <h1 class="header-one">Effective Solutions for Your Business</h1>
+          <h1 class="text-header">Effective Solutions for Your Business</h1>
           <button class="button" type="button" data-modal-open>
             Order Service
           </button>
@@ -77,7 +144,7 @@
       </section>
 
       <!-- SECTION TWO -->
-      <section class="section-two-paddings">
+      <section class="section-two">
         <div class="container">
           <h2 class="visually-hidden">Advantages</h2>
           <ul class="list-section-two">
@@ -136,17 +203,19 @@
       <!-- SECTION TREE -->
       <section class="section-tree">
         <div class="container">
-          <h2 class="header-two header-our-team">Our Team</h2>
+          <h2 class="header-our-team">Our Team</h2>
           <ul class="list-our-team">
             <li class="list-item-our-team">
               <img
+                class="image-team"
                 src="./images/img-3.jpg"
-                alt="Product Designer"
+                alt="Product
+              Designer"
                 width="264"
               />
               <div class="information-about-team">
-                <h3 class="header-tree header-our-list">Mark Guerrero</h3>
-                <p class="text text-our-list">Product Designer</p>
+                <h3 class="header-our-list">Mark Guerrero</h3>
+                <p class="text-our-list">Product Designer</p>
                 <!-- Logo icons -->
                 <ul class="icons-messenger-list">
                   <li class="list-item-icon">
@@ -182,13 +251,14 @@
             </li>
             <li class="list-item-our-team">
               <img
+                class="image-team"
                 src="./images/img-2.jpg"
                 alt="Frontend Developer"
                 width="264"
               />
               <div class="information-about-team">
-                <h3 class="header-tree header-our-list">Tom Ford</h3>
-                <p class="text text-our-list">Frontend Developer</p>
+                <h3 class="header-our-list">Tom Ford</h3>
+                <p class="text-our-list">Frontend Developer</p>
                 <ul class="icons-messenger-list">
                   <li class="list-item-icon">
                     <a href="./index.html" class="link-icon">
@@ -222,10 +292,15 @@
               </div>
             </li>
             <li class="list-item-our-team">
-              <img src="./images/img-1.jpg" alt="Marketing" width="264" />
+              <img
+                class="image-team"
+                src="./images/img-1.jpg"
+                alt="Marketing"
+                width="264"
+              />
               <div class="information-about-team">
-                <h3 class="header-tree header-our-list">Camila Garcia</h3>
-                <p class="text text-our-list">Marketing</p>
+                <h3 class="header-our-list">Camila Garcia</h3>
+                <p class="text-our-list">Marketing</p>
                 <ul class="icons-messenger-list">
                   <li class="list-item-icon">
                     <a href="./index.html" class="link-icon">
@@ -259,10 +334,15 @@
               </div>
             </li>
             <li class="list-item-our-team">
-              <img src="./images/img.jpg" alt="UI Designer" width="264" />
+              <img
+                class="image-team"
+                src="./images/img.jpg"
+                alt="UI Designer"
+                width="264"
+              />
               <div class="information-about-team">
-                <h3 class="header-tree header-our-list">Daniel Wilson</h3>
-                <p class="text text-our-list">UI Designer</p>
+                <h3 class="header-our-list">Daniel Wilson</h3>
+                <p class="text-our-list">UI Designer</p>
                 <ul class="icons-messenger-list">
                   <li class="list-item-icon">
                     <a href="./index.html" class="link-icon">
@@ -300,9 +380,9 @@
       </section>
       <!-- Our-Portfolio -->
       <!-- SECTION FOUR -->
-      <section class="section-four">
+      <section class="section-four hidden">
         <div class="container">
-          <h2 class="header-two header-our-team">Our Portfolio</h2>
+          <h2 class="header-our-team">Our Portfolio</h2>
           <ul class="list-our-portfolio">
             <li class="list-item-section-four">
               <div class="overlay">
@@ -409,7 +489,7 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container footer-div">
         <!-- <div class="footer-div"> -->
         <div class="logo-and-text">
@@ -477,7 +557,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="button-close" type="button" data-modal-close>
           <svg class="icon-close-on-button" height="8" width="8">
@@ -560,10 +640,7 @@
         </form>
       </div>
     </div>
-    <!-- menu -->
-    <div class="menu">
-      <div class="content-menu"></div>
-    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
