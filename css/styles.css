@@ -107,15 +107,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-close:hover,
 .button-close:focus {
   background-color: #404bbf;
   border: none;
 }
-.icon-close-on-button {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .button-close:hover .icon-close-on-button {
   fill: #ffffff;
 }
@@ -488,6 +487,15 @@ input[type="number"] {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile-menu-close:hover {
+  background-color: #404bbf;
+}
+.icon-close-on-button {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-close:hover .icon-close-on-button {
+  fill: white;
+}
 .mobile-menu-nav {
   margin-bottom: auto;
 }
@@ -540,7 +548,7 @@ input[type="number"] {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-image.jpg);
+    url(../images/mobile-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -550,6 +558,11 @@ input[type="number"] {
   height: 432px;
   width: 320px;
   text-align: center;
+}
+@media (min-resolution: 192dpi) {
+  .section-one {
+    background-image: url(../images/mobile-background2x.jpg);
+  }
 }
 .section-one .text-header {
   color: white;
@@ -585,6 +598,17 @@ input[type="number"] {
     height: 436px;
     width: 768px;
     margin: 0 auto;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet-background.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: url(../images/tablet-background2x-min.jpg);
+    }
   }
   .text-header {
     font-size: 56px;
@@ -603,6 +627,16 @@ input[type="number"] {
     padding: 188px 0;
     height: 600px;
     width: 1440px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop.jpg);
+  }
+  @media (min-resolution: 192dpi) {
+    .section-one {
+      background-image: url(../images/hero-desktop2x.jpg);
+    }
   }
 }
 
