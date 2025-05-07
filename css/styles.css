@@ -148,10 +148,6 @@ p {
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* input[type="tel"],
-input[type="number"] {
-  appearance: textfield;
-} */
 .input-modal:focus {
   border-color: #4d5ae5;
 }
@@ -559,9 +555,13 @@ input[type="number"] {
   width: 320px;
   text-align: center;
 }
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 2x) {
   .section-one {
-    background-image: url(../images/mobile-background2x.jpg);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-background2x.jpg);
   }
 }
 .section-one .text-header {
@@ -605,9 +605,13 @@ input[type="number"] {
       ),
       url(../images/tablet-background.jpg);
   }
-  @media (min-resolution: 192dpi) {
+  @media (min-resolution: 2x) {
     .section-one {
-      background-image: url(../images/tablet-background2x-min.jpg);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-background2x-min.jpg);
     }
   }
   .text-header {
@@ -633,9 +637,13 @@ input[type="number"] {
       ),
       url(../images/hero-desktop.jpg);
   }
-  @media (min-resolution: 192dpi) {
+  @media (min-resolution: 2x) {
     .section-one {
-      background-image: url(../images/hero-desktop2x.jpg);
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desktop2x.jpg);
     }
   }
 }
